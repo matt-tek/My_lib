@@ -5,7 +5,7 @@
 ** is_number.c
 */
 
-#include "../include/match.h"
+#include "my.h"
 
 int is_number(char const *str)
 {

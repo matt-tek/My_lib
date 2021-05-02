@@ -15,14 +15,12 @@ void my_put_nbr(int nb)
         write(1, "2147483648", 10);
         return;
     }
-
     if (nb < 0 && nb != -2147483648) {
         my_putchar('-');
         nb = -nb;
     }
     if (nb < 10)
         my_putchar(nb + '0');
-
     else {
         my_put_nbr(nb / 10);
         my_putchar(nb % 10 + '0');

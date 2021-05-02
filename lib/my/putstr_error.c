@@ -5,8 +5,7 @@
 ** putstr_error.c
 */
 
-#include "../include/minish.h"
-#include "../include/my.h"
+#include "my.h"
 
 void putstr_error(char const *str)
 {

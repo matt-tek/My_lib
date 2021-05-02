@@ -19,13 +19,11 @@ int my_getnbr(char const *str)
         }
         i++;
     }
-
-    while (str[i] != '\0') {
+    for (int i = 0; str[i]; i++) {
         if (str[i] >= '0' && str[i] <= '9')
             nb = str[i] - 48 + (nb * 10);
         else
             return (nb * sign);
-        i++;
     }
     return (nb * sign);
 }

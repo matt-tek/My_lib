@@ -9,14 +9,11 @@
 
 int my_nbr_occ(char const *str, char c)
 {
-    int i = 0;
     int word = 1;
 
-    while (str[i] != '\0') {
-        if (str[i] == c) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == c)
             word++;
-        }
-        i++;
     }
     return (word);
 }

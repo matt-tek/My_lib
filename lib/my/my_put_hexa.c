@@ -11,10 +11,8 @@ void my_put_hexa(int nb)
 {
     int hexa = 16;
 
-    if (nb < 0) {
+    if (nb < 0)
         my_putchar('-');
-    }
-
     if (nb >= hexa - 1)
         my_put_hexa(nb / hexa);
     my_putchar(hexa_tab[nb % hexa]);
