@@ -8,6 +8,7 @@
 #ifndef MY_H_
 #define MY_H_
 #include "printf.h"
+#include <stdio.h>
 
 void my_putchar(char c);
 void my_putstr(char const *str);
@@ -24,6 +25,8 @@ void my_show_word_array(char **tab);
 void putstr_error(char const *str);
 char **my_str_to_word_array(char const *str);
 char **my_str_to_tab(char const *str, char c);
+char **getline_parser(FILE *fp);
+char **append_to_tab(char **array, char const *str);
 char *my_revstr(char *str);
 char *my_strcat(char *dest, char const *src);
 char *my_strcpy(char *dest, char const *src);

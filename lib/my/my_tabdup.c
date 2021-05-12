@@ -5,8 +5,8 @@
 ** my_tabdup.c
 */
 
-#include "../include/my.h"
-#include "../include/minish.h"
+#include "my.h"
+#include <stdlib.h>
 
 char **my_tabdup(char **array)
 {

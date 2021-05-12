@@ -6,6 +6,7 @@
 */
 
 #include "my.h"
+#include <unistd.h>
 
 void putstr_error(char const *str)
 {
