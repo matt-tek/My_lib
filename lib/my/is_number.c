@@ -6,13 +6,15 @@
 */
 
 #include "my.h"
+#include <stdbool.h>
 
-int is_number(char const *str)
+bool is_number(char const *str)
 {
     int i = 0;
+
     for (; str[i] != '\0'; i++) {
-        if (str[i] >= '0' && str[i] <= '9')
-            return (1);
+        if (str[i] != '\n' && (str[i] < '0' || str[i] > '9'))
+            return (true);
     }
-    return (0);
+    return (false);
 }

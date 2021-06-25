@@ -9,7 +9,9 @@
 #define MY_H_
 #include "printf.h"
 #include <stdio.h>
+#include <stdbool.h>
 
+bool is_number(char const *str);
 void my_putchar(char c);
 void my_putstr(char const *str);
 void my_put_nbr(int nb);
@@ -25,7 +27,9 @@ void my_show_word_array(char **tab);
 void putstr_error(char const *str);
 char **my_str_to_word_array(char const *str);
 char **my_str_to_tab(char const *str, char c);
-char **getline_parser(FILE *fp);
+char **getline_parser(void);
+char **my_tabdup(char **array);
+char **getline_file_parser(FILE *fp);
 char **append_to_tab(char **array, char const *str);
 char *my_revstr(char *str);
 char *my_strcat(char *dest, char const *src);
@@ -40,6 +44,5 @@ int my_nbr_word(char const *str);
 int my_nbr_occ(char const *str, char c);
 int my_strncmp(char const *s1, char const *s2, int n);
 int my_strcmp(char *str, char *src);
-int is_number(char const *str);
 
 #endif
